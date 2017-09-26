@@ -21,7 +21,6 @@ export class InformacionService {
   }
   public carga_firebase() {
     this.http.get('https://paginaweb-bb5e9.firebaseio.com/equipo.json').subscribe(data => {
-      console.log(data.json())
       this.equipo = data.json()
     })
   }

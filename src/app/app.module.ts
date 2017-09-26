@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http'
 import { Routing } from './app.routes'
 
 import { InformacionService } from './services/informacion.service'
+import { ProductosService } from './services/productos.service'
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -28,7 +29,8 @@ import { ItemComponent } from './components/item/item.component';
     Routing
   ],
   providers: [
-    InformacionService
+    InformacionService,
+    ProductosService
   ],
   bootstrap: [AppComponent]
 })
