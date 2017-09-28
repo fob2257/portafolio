@@ -11,7 +11,7 @@ export class HeaderComponent {
   constructor(public _is: InformacionService, private router: Router) { }
 
   buscar_producto(termino: string) {
-    console.log(termino)
+    // console.log(termino)
     this.router.navigate(['buscar', termino])
   }
 }
