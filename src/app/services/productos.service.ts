@@ -11,6 +11,10 @@ export class ProductosService {
     this.cargar_productos()
   }
 
+  public cargar_producto(id: string) {
+    return this.http.get(`https://paginaweb-bb5e9.firebaseio.com/productos/${id}.json`)
+  }
+
   public cargar_productos() {
     this.cargando = true
     this.http.get('https://paginaweb-bb5e9.firebaseio.com/productos_idx.json')
